@@ -11,9 +11,11 @@ interface TaskFormProps {
 }
 
 function TaskForm({ onAdd }: TaskFormProps) {
+  // State to manage form input values
   const [title, setTitle] = useState<string>('');
   const [description, setDescription] = useState<string>('');
 
+  // Handle form submission
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     onAdd({ title, description });

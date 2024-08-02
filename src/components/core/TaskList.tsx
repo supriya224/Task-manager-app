@@ -18,15 +18,18 @@ interface NewTask {
 }
 
 function TaskList() {
+  // State to manage the list of tasks
   const [tasks, setTasks] = useState<Task[]>([]);
-  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [searchTerm, setSearchTerm] = useState<string>(''); // State to manage the search term
 
+  // Fetch tasks from the API on component mount
   useEffect(() => {
     fetch('/task.json')
       .then((response) => response.json())
       .then((data: Task[]) => setTasks(data));
   }, []);
 
+  // Function to add a new task
   const addTask = (newTask: NewTask) => {
     const task: Task = {
       id: tasks.length + 1,
@@ -38,6 +41,7 @@ function TaskList() {
     setTasks([...tasks, task]);
   };
 
+  // Function to update an existing task
   const updateTask = (id: number, updatedTask: Partial<Task>) => {
     setTasks(
       tasks.map((task) =>
@@ -48,6 +52,7 @@ function TaskList() {
     );
   };
 
+  // Function to toggle the completion status of a task
   const toggleTask = (id: number) => {
     setTasks(
       tasks.map((task) =>
@@ -56,6 +61,7 @@ function TaskList() {
     );
   };
 
+  // Filter tasks based on the search term
   const filteredTasks = tasks.filter(
     (task) =>
       task.title.toLowerCase().includes(searchTerm.toLowerCase()) ||

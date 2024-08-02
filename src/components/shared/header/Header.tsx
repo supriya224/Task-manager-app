@@ -52,9 +52,9 @@ const Header: React.FC = () => {
             onClick={toggleMenu}
           >
             {menuOpen ? (
-              <X className="hover:scale-125 duration-300" />
+              <X className="hover:scale-125 duration-300 text-white" />
             ) : (
-              <Menu className="hover:scale-125 duration-300" />
+              <Menu className="hover:scale-125 duration-300 text-white" />
             )}
           </button>
         </div>

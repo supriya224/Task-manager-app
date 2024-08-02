@@ -1,11 +1,13 @@
 import React from 'react';
 import TaskList from '../components/core/TaskList';
+import { MainLayout } from '../layouts';
 
 function HomePage() {
   return (
-    <div>
+    <MainLayout>
+      {/* import task list  */}
       <TaskList />
-    </div>
+    </MainLayout>
   );
 }
 
