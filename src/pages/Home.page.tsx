@@ -1,12 +1,11 @@
 import React from 'react';
-import { MainLayout } from '../layouts';
-import AddTask from '../components/core/AddTask/AddTask';
+import TaskList from '../components/core/TaskList';
 
 function HomePage() {
   return (
-    <MainLayout>
-      <AddTask />
-    </MainLayout>
+    <div>
+      <TaskList />
+    </div>
   );
 }
 
