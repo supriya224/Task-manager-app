@@ -77,7 +77,7 @@ function TaskItem({ task, onUpdate, onToggle }: TaskItemProps) {
             <div>
               <p className="text-md">
                 {' '}
-                <span className="text-xl font-bold"> Discription: </span>
+                <span className="text-xl font-bold"> Description: </span>
                 {task.description}
               </p>
               <p>
