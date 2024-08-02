@@ -39,4 +39,6 @@ Make sure you have the following installed:
    git clone https://github.com/supriya224/Task-manager-app.git
 2. cd Task-manager-app
 3. yarn install
-4. yarn start![Uploading Screenshot 2024-08-02 at 11.21.50 AM.png…]()
+4. yarn start
+5. <img width="1440" alt="Screenshot 2024-08-02 at 11 21 50 AM" src="https://github.com/user-attachments/assets/f65b54fa-0411-48c7-a6e3-b4e6931d993c">
+
