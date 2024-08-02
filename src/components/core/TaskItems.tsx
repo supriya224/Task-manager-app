@@ -30,10 +30,10 @@ function TaskItem({ task, onUpdate, onToggle }: TaskItemProps) {
   };
 
   return (
-    <section className="bg-purple-400 m-4 shadow-lg pb-3 shadow-gray-400 border">
+    <section className="bg-gradient-to-b from-[#d2a8eb] to-[#88edff]  m-4 shadow-lg pb-3 shadow-gray-400 border">
       <div
         onClick={() => setIsExpanded(!isExpanded)}
-        className="m-2 p-2 flex gap-32  bg-red-200"
+        className="m-2 p-2 flex gap-32  bg-purple-200"
       >
         <h3>
           {' '}
@@ -66,27 +66,27 @@ function TaskItem({ task, onUpdate, onToggle }: TaskItemProps) {
               <button
                 type="button"
                 onClick={handleUpdate}
-                className="flex gap-2 my-2 p-2 rounded-lg bg-green-400"
+                className="flex gap-2 my-2 p-2 rounded-lg bg-indigo-900 text-white"
               >
                 Save
               </button>
             </div>
           ) : (
             <div>
-              <p>
+              <p className="text-md">
                 {' '}
                 <span className="text-xl font-bold"> Discription: </span>
                 {task.description}
               </p>
               <p>
                 {' '}
-                <span className=" font-bold"> Last update: </span>{' '}
+                <span className="font-bold"> Last update: </span>{' '}
                 {new Date(task.lastUpdated).toLocaleString()}
               </p>
               <button
                 type="button"
                 onClick={() => setIsEditing(true)}
-                className="bg-sky-300 text-white p-1 px-4 rounded-lg mt-3"
+                className="bg-sky-800 text-white p-1 px-4 rounded-lg mt-3"
               >
                 Edit
               </button>

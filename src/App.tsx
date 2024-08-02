@@ -4,7 +4,7 @@ import HomePage from './pages/Home.page';
 
 function App() {
   return (
-    <div className="bg-gradient-to-b from-[#18282A] to-[#221A2C]   h-screen">
+    <div className="bg-gradient-to-b from-[#18282A] to-[#221A2C]">
       <BrowserRouter>
         <Header />
         <Routes>

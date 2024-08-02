@@ -22,20 +22,18 @@ const Header: React.FC = () => {
     { title: 'Home', link: '/' },
     { title: 'About', link: '/' },
     { title: 'Review', link: '/' },
-    { title: 'Gallary', link: '/' },
-    { title: 'Contact', link: '/' },
   ];
 
   return (
     <header className="border-b ">
-      <div className="container mx-auto w-full flex gap-6 justify-between items-center p-2">
+      <div className="container mx-auto w-full flex gap-6 justify-between p-2">
         <img
           width={40}
           src="https://media.licdn.com/dms/image/D560BAQE5PCYCIJ4a9A/company-logo_200_200/0/1721995789462/helpstir_india_logo?e=2147483647&v=beta&t=wetGemEuIs8zIX2u_0_D8cYodhTaRYWnlZ1b0QSDmNc"
           alt=""
           className="animate-bounce rounded-full"
         />
-        <div className="hidden lg:flex gap-7 text-md items-center text-white">
+        <div className="hidden lg:flex gap-7 text-md  text-white">
           {header.map((item, index) => (
             <ul key={index} className="flex justify-center">
               <Link

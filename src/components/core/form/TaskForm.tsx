@@ -44,7 +44,7 @@ function TaskForm({ onAdd }: TaskFormProps) {
       </div>
       <button
         type="submit"
-        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        className="px-4 py-2 bg-cyan-500 text-white rounded hover:bg-cyan-700"
       >
         Add Task
       </button>
