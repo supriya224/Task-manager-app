@@ -3,7 +3,7 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/function-component-definition */
 import { useState } from 'react';
-import { Menu, Search, X } from 'react-feather';
+import { Menu, X } from 'react-feather';
 import { Link } from 'react-router-dom';
 
 interface HeaderItem {
@@ -13,14 +13,9 @@ interface HeaderItem {
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  };
-
-  const toggleSearch = () => {
-    setSearchOpen(!searchOpen);
   };
 
   const header: HeaderItem[] = [
@@ -28,11 +23,11 @@ const Header: React.FC = () => {
     { title: 'About', link: '/' },
     { title: 'Review', link: '/' },
     { title: 'Gallary', link: '/' },
-    { title: 'Contact', link: '/contact' },
+    { title: 'Contact', link: '/' },
   ];
 
   return (
-    <header className="border-b">
+    <header className="border-b ">
       <div className="container mx-auto w-full flex gap-6 justify-between items-center p-2">
         <img
           width={40}
@@ -40,7 +35,7 @@ const Header: React.FC = () => {
           alt=""
           className="animate-bounce rounded-full"
         />
-        <div className="hidden lg:flex gap-7 text-md items-center">
+        <div className="hidden lg:flex gap-7 text-md items-center text-white">
           {header.map((item, index) => (
             <ul key={index} className="flex justify-center">
               <Link
@@ -53,20 +48,6 @@ const Header: React.FC = () => {
           ))}
         </div>
         <div className="flex  justify-center items-center font-extrabold gap-2">
-          <div className="flex gap-2">
-            {searchOpen && (
-              <input
-                type="text"
-                placeholder="search"
-                className="border p-1.5 rounded-2xl text-sm font-light outline-none"
-              />
-            )}
-            <Search
-              onClick={toggleSearch}
-              className="cursor-pointer hover:scale-125 duration-300"
-            />
-          </div>
-
           <button
             type="button"
             className="md:hidden flex justify-end"

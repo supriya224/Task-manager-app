@@ -64,18 +64,18 @@ function TaskList() {
 
   return (
     <div className="mx-auto container">
-      <div className="max-w-2xl text-center">
-        <h1 className="text-2xl font-bold mb-4">Todo List</h1>
+      <div className="max-w-2xl ">
+        <h3 className="text-4xl font-bold my-4 text-white">Todo List</h3>
         <input
           type="text"
           placeholder="Search tasks..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full px-3 py-2 mb-4 border rounded bg-gray-200 text-white"
+          className="w-full px-3 py-2 mb-4 border rounded bg-gray-200  outline-none"
         />{' '}
         <TaskForm onAdd={addTask} />
       </div>
-      <div className=" mt-32 bg-pink-50 w-fit p-32 ">
+      <div className="mt-3 flex flex-wrap  ">
         {filteredTasks.map((task) => (
           <TaskItem
             key={task.id}

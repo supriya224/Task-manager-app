@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "title": "First Task",
+      "description": "This is the first task.",
+      "completed": false,
+      "lastUpdated": "2024-07-01T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Second Task",
+      "description": "This is the second task.",
+      "completed": false,
+      "lastUpdated": "2024-07-01T13:00:00Z"
+    }
+  ]
+  

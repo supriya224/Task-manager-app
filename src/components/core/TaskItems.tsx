@@ -30,42 +30,71 @@ function TaskItem({ task, onUpdate, onToggle }: TaskItemProps) {
   };
 
   return (
-    <div>
-      <div onClick={() => setIsExpanded(!isExpanded)}>
-        <h3>{task.title}</h3>
-        <button type="button" onClick={() => onToggle(task.id)}>
-          {task.completed ? 'Undo' : 'Done'}
+    <section className="bg-purple-400 m-4 shadow-lg pb-3 shadow-gray-400 border">
+      <div
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="m-2 p-2 flex gap-32  bg-red-200"
+      >
+        <h3>
+          {' '}
+          <span className="text-xl font-bold">Title: </span>
+          {task.title}
+        </h3>
+        <button
+          type="button"
+          onClick={() => onToggle(task.id)}
+          className="bg-blue-400 text-white p-1 rounded-lg px-4"
+        >
+          {task.completed ? 'Undo' : 'Show'}
         </button>
       </div>
       {isExpanded && (
-        <div>
+        <div className=" px-2">
           {isEditing ? (
-            <div>
+            <div className=" ">
               <input
                 type="text"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
+                className="flex gap-2 my-2 p-2 w-full rounded-lg border-none outline-none"
               />
               <textarea
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
+                className="flex gap-2 my-2 p-2 w-full rounded-lg border-none outline-none"
               />
-              <button type="button" onClick={handleUpdate}>
+              <button
+                type="button"
+                onClick={handleUpdate}
+                className="flex gap-2 my-2 p-2 rounded-lg bg-green-400"
+              >
                 Save
               </button>
             </div>
           ) : (
             <div>
-              <p>{task.description}</p>
-              <p>Last updated: {new Date(task.lastUpdated).toLocaleString()}</p>
-              <button type="button" onClick={() => setIsEditing(true)}>
+              <p>
+                {' '}
+                <span className="text-xl font-bold"> Discription: </span>
+                {task.description}
+              </p>
+              <p>
+                {' '}
+                <span className=" font-bold"> Last update: </span>{' '}
+                {new Date(task.lastUpdated).toLocaleString()}
+              </p>
+              <button
+                type="button"
+                onClick={() => setIsEditing(true)}
+                className="bg-sky-300 text-white p-1 px-4 rounded-lg mt-3"
+              >
                 Edit
               </button>
             </div>
           )}
         </div>
       )}
-    </div>
+    </section>
   );
 }
 
