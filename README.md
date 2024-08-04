@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# Task Manager App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+Dear,
 
-## Available Scripts
+I hope this message finds you well. I am writing to submit my assignment. I have completed the task using React components from JavaScript to TypeScript, adding appropriate types and comments for better code readability and maintainability. Additionally, I have used Tailwind CSS for styling.
 
-In the project directory, you can run:
+Thank you for the opportunity to work on this assignment. I look forward to your feedback.
 
-### `npm start`
+Best regards,  
+Supriya Maurya  
+8081149224
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Github: [https://github.com/supriya224/Task-manager-app](https://github.com/supriya224/Task-manager-app)  
+Deploy: [https://task-manager-app-dun.vercel.app/](https://task-manager-app-dun.vercel.app/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
+- Task management with add, update, and delete functionalities.
+- Search functionality to filter tasks.
+- Responsive design using Tailwind CSS.
+- Conversion of components from JavaScript to TypeScript for improved type safety and readability.
 
-### `npm test`
+## Technologies Used
+- React
+- TypeScript
+- Tailwind CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
+To get a local copy up and running, follow these simple steps:
 
-### `npm run build`
+### Prerequisites
+Make sure you have the following installed:
+- Node.js
+- npm or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
+1. Clone the repository
+   ```bash
+   git clone https://github.com/supriya224/Task-manager-app.git
+2. cd Task-manager-app
+3. yarn install
+4. yarn start
+5. <img width="1440" alt="Screenshot 2024-08-02 at 11 21 50 AM" src="https://github.com/user-attachments/assets/f65b54fa-0411-48c7-a6e3-b4e6931d993c">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
