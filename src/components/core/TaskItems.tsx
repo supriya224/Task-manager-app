@@ -32,7 +32,7 @@ function TaskItem({ task, onUpdate, onToggle }: TaskItemProps) {
   };
 
   return (
-    <section className="bg-gradient-to-b from-[#d2a8eb] to-[#88edff]  m-4 shadow-lg pb-3 shadow-gray-400 border">
+    <section className="bg-gradient-to-b from-[#d2a8eb] to-[#88edff]  m-4 shadow-lg pb-3 shadow-gray-400 border w-auto">
       <div
         onClick={() => setIsExpanded(!isExpanded)}
         className="m-2 p-2 flex  justify-between gap-12  bg-purple-200"

@@ -69,7 +69,7 @@ function TaskList() {
   );
 
   return (
-    <div className="mx-auto container h-screen">
+    <div className="mx-auto container ">
       <div className="max-w-2xl mx-3 ">
         <h3 className="text-4xl font-bold my-4 text-white">Todo List</h3>
         <input
